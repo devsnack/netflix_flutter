@@ -3,6 +3,7 @@ import 'package:netflix_flutter/data/data.dart';
 import 'package:netflix_flutter/widgets/widgets.dart';
 
 class home_screen extends StatefulWidget {
+  const home_screen({Key key}) : super(key: key);
   @override
   _home_screenState createState() => _home_screenState();
 }
@@ -49,17 +50,24 @@ class _home_screenState extends State<home_screen> {
           SliverPadding(
               padding: EdgeInsets.only(top: 15, bottom: 10),
               sliver: SliverToBoxAdapter(
-                child: Previews(title: "Previews", contentlist: previews),
-              )),
-          SliverPadding(
-              padding: EdgeInsets.only(top: 15, bottom: 0),
-              sliver: SliverToBoxAdapter(
-                child: ContentList(title: "Mylist", contentlist: myList),
+                child: Previews(
+                    key: PageStorageKey("previews"),
+                    title: "Previews",
+                    contentlist: previews),
               )),
           SliverPadding(
               padding: EdgeInsets.only(top: 15, bottom: 0),
               sliver: SliverToBoxAdapter(
                 child: ContentList(
+                    key: PageStorageKey("mylist"),
+                    title: "Mylist",
+                    contentlist: myList),
+              )),
+          SliverPadding(
+              padding: EdgeInsets.only(top: 15, bottom: 0),
+              sliver: SliverToBoxAdapter(
+                child: ContentList(
+                  key: PageStorageKey("originals"),
                   title: "Originals",
                   contentlist: originals,
                   isoriginals: true,
@@ -68,7 +76,10 @@ class _home_screenState extends State<home_screen> {
           SliverPadding(
               padding: EdgeInsets.only(top: 15, bottom: 10),
               sliver: SliverToBoxAdapter(
-                child: ContentList(title: "Trending", contentlist: trending),
+                child: ContentList(
+                    key: PageStorageKey("trending"),
+                    title: "Trending",
+                    contentlist: trending),
               ))
         ],
       ),

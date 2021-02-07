@@ -9,7 +9,7 @@ class NavBar extends StatefulWidget {
 class _NavBarState extends State<NavBar> {
   var _selectedIndex = 0;
   List _screens = [
-    home_screen(),
+    home_screen(key: PageStorageKey("home_screen")),
     Scaffold(),
     Scaffold(),
     Scaffold(),
@@ -29,12 +29,17 @@ class _NavBarState extends State<NavBar> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.black,
         unselectedItemColor: Colors.grey,
-        items: _icons.entries.map((entry) {
-          BottomNavigationBarItem(
-            icon: Icon(entry.value),
-            label: entry.key,
-          );
-        }).toList(),
+        type: BottomNavigationBarType.fixed,
+        items: _icons
+            .map((title, icon) => MapEntry(
+                  title,
+                  BottomNavigationBarItem(
+                    icon: Icon(icon),
+                    label: title,
+                  ),
+                ))
+            .values
+            .toList(),
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.white,
         onTap: (index) {

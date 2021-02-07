@@ -1,772 +1,346 @@
-define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/alignment.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/flutter/src/painting/decoration_image.dart', 'packages/flutter/src/painting/image_resolution.dart', 'packages/flutter/src/painting/box_fit.dart', 'packages/flutter/src/painting/gradient.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/netflix_flutter/widgets/vertical_action_button.dart', 'packages/flutter/src/material/icons.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/widgets/icon_data.dart', 'packages/flutter/src/painting/strut_style.dart'], (function load__packages__netflix_flutter__widgets__content_header_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__alignment$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__flutter__src__painting__decoration_image$46dart, packages__flutter__src__painting__image_resolution$46dart, packages__flutter__src__painting__box_fit$46dart, packages__flutter__src__painting__gradient$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__rendering__flex$46dart, packages__netflix_flutter__widgets__vertical_action_button$46dart, packages__flutter__src__material__icons$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__widgets__icon_data$46dart, packages__flutter__src__painting__strut_style$46dart) {
+define(['dart_sdk'], (function load__packages__flutter__src__foundation__licenses_dart(dart_sdk) {
   'use strict';
   const core = dart_sdk.core;
   const _interceptors = dart_sdk._interceptors;
-  const ui = dart_sdk.ui;
+  const _internal = dart_sdk._internal;
+  const _js_helper = dart_sdk._js_helper;
+  const async = dart_sdk.async;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
-  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
-  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
-  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
-  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
-  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
-  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
-  const alignment = packages__flutter__src__painting__alignment$46dart.src__painting__alignment;
-  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
-  const decoration_image = packages__flutter__src__painting__decoration_image$46dart.src__painting__decoration_image;
-  const image_resolution = packages__flutter__src__painting__image_resolution$46dart.src__painting__image_resolution;
-  const box_fit = packages__flutter__src__painting__box_fit$46dart.src__painting__box_fit;
-  const gradient = packages__flutter__src__painting__gradient$46dart.src__painting__gradient;
-  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
-  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
-  const vertical_action_button = packages__netflix_flutter__widgets__vertical_action_button$46dart.widgets__vertical_action_button;
-  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
-  const flat_button = packages__flutter__src__material__icon_button$46dart.src__material__flat_button;
-  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
-  const icon_data = packages__flutter__src__widgets__icon_data$46dart.src__widgets__icon_data;
-  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
-  var content_header = Object.create(dart.library);
-  var _LocationL = () => (_LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))();
-  var ColorL = () => (ColorL = dart.constFn(dart.legacy(ui.Color)))();
-  var JSArrayOfColorL = () => (JSArrayOfColorL = dart.constFn(_interceptors.JSArray$(ColorL())))();
+  var licenses = Object.create(dart.library);
+  var $substring = dartx.substring;
+  var $add = dartx.add;
+  var $isNotEmpty = dartx.isNotEmpty;
+  var $join = dartx.join;
+  var $trimLeft = dartx.trimLeft;
+  var $clear = dartx.clear;
+  var $_get = dartx._get;
+  var $truncate = dartx.truncate;
+  var _LicenseEntryWithLineBreaksParserStateL = () => (_LicenseEntryWithLineBreaksParserStateL = dart.constFn(dart.legacy(licenses._LicenseEntryWithLineBreaksParserState)))();
+  var JSArrayOfString = () => (JSArrayOfString = dart.constFn(_interceptors.JSArray$(core.String)))();
   var VoidTovoid = () => (VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))();
-  var WidgetL = () => (WidgetL = dart.constFn(dart.legacy(framework.Widget)))();
-  var JSArrayOfWidgetL = () => (JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(WidgetL())))();
-  var VoidToNull = () => (VoidToNull = dart.constFn(dart.fnType(core.Null, [])))();
+  var VoidToLicenseParagraph = () => (VoidToLicenseParagraph = dart.constFn(dart.fnType(licenses.LicenseParagraph, [])))();
+  var SyncIterableOfLicenseParagraph = () => (SyncIterableOfLicenseParagraph = dart.constFn(_js_helper.SyncIterable$(licenses.LicenseParagraph)))();
+  var StreamOfLicenseEntry = () => (StreamOfLicenseEntry = dart.constFn(async.Stream$(licenses.LicenseEntry)))();
+  var VoidToStreamOfLicenseEntry = () => (VoidToStreamOfLicenseEntry = dart.constFn(dart.fnType(StreamOfLicenseEntry(), [])))();
+  var JSArrayOfVoidToStreamOfLicenseEntry = () => (JSArrayOfVoidToStreamOfLicenseEntry = dart.constFn(_interceptors.JSArray$(VoidToStreamOfLicenseEntry())))();
+  var _AsyncStarImplOfLicenseEntry = () => (_AsyncStarImplOfLicenseEntry = dart.constFn(async._AsyncStarImpl$(licenses.LicenseEntry)))();
   const CT = Object.create(null);
-  var L0 = "package:netflix_flutter/widgets/content_header.dart";
+  var L0 = "file:///C:/flutter/packages/flutter/lib/src/foundation/licenses.dart";
+  var L1 = "package:flutter/src/foundation/licenses.dart";
   dart.defineLazy(CT, {
-    get C2() {
-      return C2 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "height",
-        [_Location_column]: 11,
-        [_Location_line]: 12,
-        [_Location_file]: null
-      });
-    },
-    get C3() {
-      return C3 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "decoration",
-        [_Location_column]: 11,
-        [_Location_line]: 13,
-        [_Location_file]: null
+    get C0() {
+      return C0 = dart.const({
+        __proto__: licenses._LicenseEntryWithLineBreaksParserState.prototype,
+        [_name$]: "_LicenseEntryWithLineBreaksParserState.beforeParagraph",
+        index: 0
       });
     },
     get C1() {
-      return C1 = dart.constList([C2 || CT.C2, C3 || CT.C3], _LocationL());
-    },
-    get C0() {
-      return C0 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C1 || CT.C1,
-        [_Location_name]: null,
-        [_Location_column]: 9,
-        [_Location_line]: 11,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
+      return C1 = dart.const({
+        __proto__: licenses._LicenseEntryWithLineBreaksParserState.prototype,
+        [_name$]: "_LicenseEntryWithLineBreaksParserState.inParagraph",
+        index: 1
       });
     },
-    get C6() {
-      return C6 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "height",
-        [_Location_column]: 13,
-        [_Location_line]: 18,
-        [_Location_file]: null
-      });
-    },
-    get C7() {
-      return C7 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "decoration",
-        [_Location_column]: 13,
-        [_Location_line]: 19,
-        [_Location_file]: null
-      });
-    },
-    get C5() {
-      return C5 = dart.constList([C6 || CT.C6, C7 || CT.C7], _LocationL());
-    },
-    get C4() {
-      return C4 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C5 || CT.C5,
-        [_Location_name]: null,
-        [_Location_column]: 9,
-        [_Location_line]: 17,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C10() {
-      return C10 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "image",
-        [_Location_column]: 17,
-        [_Location_line]: 29,
-        [_Location_file]: null
-      });
-    },
-    get C9() {
-      return C9 = dart.constList([C10 || CT.C10], _LocationL());
-    },
-    get C8() {
-      return C8 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C9 || CT.C9,
-        [_Location_name]: null,
-        [_Location_column]: 22,
-        [_Location_line]: 28,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C13() {
-      return C13 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "width",
-        [_Location_column]: 15,
-        [_Location_line]: 27,
-        [_Location_file]: null
-      });
-    },
-    get C14() {
-      return C14 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 15,
-        [_Location_line]: 28,
-        [_Location_file]: null
-      });
-    },
-    get C12() {
-      return C12 = dart.constList([C13 || CT.C13, C14 || CT.C14], _LocationL());
-    },
-    get C11() {
-      return C11 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C12 || CT.C12,
-        [_Location_name]: null,
-        [_Location_column]: 20,
-        [_Location_line]: 26,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C17() {
-      return C17 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "bottom",
-        [_Location_column]: 13,
-        [_Location_line]: 25,
-        [_Location_file]: null
-      });
-    },
-    get C18() {
-      return C18 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 13,
-        [_Location_line]: 26,
-        [_Location_file]: null
-      });
-    },
-    get C16() {
-      return C16 = dart.constList([C17 || CT.C17, C18 || CT.C18], _LocationL());
-    },
-    get C15() {
-      return C15 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C16 || CT.C16,
-        [_Location_name]: null,
-        [_Location_column]: 9,
-        [_Location_line]: 24,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C21() {
-      return C21 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "icon",
-        [_Location_column]: 19,
-        [_Location_line]: 40,
-        [_Location_file]: null
-      });
-    },
-    get C22() {
-      return C22 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "title",
-        [_Location_column]: 19,
-        [_Location_line]: 41,
-        [_Location_file]: null
-      });
-    },
-    get C23() {
-      return C23 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "ontap",
-        [_Location_column]: 19,
-        [_Location_line]: 42,
-        [_Location_file]: null
-      });
-    },
-    get C20() {
-      return C20 = dart.constList([C21 || CT.C21, C22 || CT.C22, C23 || CT.C23], _LocationL());
-    },
-    get C19() {
-      return C19 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C20 || CT.C20,
-        [_Location_name]: null,
-        [_Location_column]: 17,
-        [_Location_line]: 39,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C25() {
-      return C25 = dart.constList([], _LocationL());
-    },
-    get C24() {
-      return C24 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C25 || CT.C25,
-        [_Location_name]: null,
-        [_Location_column]: 17,
-        [_Location_line]: 44,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C28() {
-      return C28 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "icon",
-        [_Location_column]: 21,
-        [_Location_line]: 46,
-        [_Location_file]: null
-      });
-    },
-    get C29() {
-      return C29 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "title",
-        [_Location_column]: 21,
-        [_Location_line]: 47,
-        [_Location_file]: null
-      });
-    },
-    get C30() {
-      return C30 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "ontap",
-        [_Location_column]: 21,
-        [_Location_line]: 48,
-        [_Location_file]: null
-      });
-    },
-    get C27() {
-      return C27 = dart.constList([C28 || CT.C28, C29 || CT.C29, C30 || CT.C30], _LocationL());
-    },
-    get C26() {
-      return C26 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C27 || CT.C27,
-        [_Location_name]: null,
-        [_Location_column]: 17,
-        [_Location_line]: 45,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C33() {
-      return C33 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "mainAxisAlignment",
-        [_Location_column]: 15,
-        [_Location_line]: 37,
-        [_Location_file]: null
-      });
-    },
-    get C34() {
-      return C34 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "children",
-        [_Location_column]: 15,
-        [_Location_line]: 38,
-        [_Location_file]: null
-      });
-    },
-    get C32() {
-      return C32 = dart.constList([C33 || CT.C33, C34 || CT.C34], _LocationL());
-    },
-    get C31() {
-      return C31 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C32 || CT.C32,
-        [_Location_name]: null,
-        [_Location_column]: 20,
-        [_Location_line]: 36,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C37() {
-      return C37 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "left",
-        [_Location_column]: 13,
-        [_Location_line]: 33,
-        [_Location_file]: null
-      });
-    },
-    get C38() {
-      return C38 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "right",
-        [_Location_column]: 13,
-        [_Location_line]: 34,
-        [_Location_file]: null
-      });
-    },
-    get C39() {
-      return C39 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "bottom",
-        [_Location_column]: 13,
-        [_Location_line]: 35,
-        [_Location_file]: null
-      });
-    },
-    get C40() {
-      return C40 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 13,
-        [_Location_line]: 36,
-        [_Location_file]: null
-      });
-    },
-    get C36() {
-      return C36 = dart.constList([C37 || CT.C37, C38 || CT.C38, C39 || CT.C39, C40 || CT.C40], _LocationL());
-    },
-    get C35() {
-      return C35 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C36 || CT.C36,
-        [_Location_name]: null,
-        [_Location_column]: 9,
-        [_Location_line]: 32,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C43() {
-      return C43 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "alignment",
-        [_Location_column]: 7,
-        [_Location_line]: 9,
-        [_Location_file]: null
-      });
-    },
-    get C44() {
-      return C44 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "children",
-        [_Location_column]: 7,
-        [_Location_line]: 10,
-        [_Location_file]: null
-      });
-    },
-    get C42() {
-      return C42 = dart.constList([C43 || CT.C43, C44 || CT.C44], _LocationL());
-    },
-    get C41() {
-      return C41 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C42 || CT.C42,
-        [_Location_name]: null,
-        [_Location_column]: 12,
-        [_Location_line]: 8,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C48() {
-      return C48 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "icon",
-        [_Location_column]: 15,
-        [_Location_line]: 61,
-        [_Location_file]: null
-      });
-    },
-    get C49() {
-      return C49 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "size",
-        [_Location_column]: 9,
-        [_Location_line]: 62,
-        [_Location_file]: null
-      });
-    },
-    get C47() {
-      return C47 = dart.constList([C48 || CT.C48, C49 || CT.C49], _LocationL());
-    },
-    get C46() {
-      return C46 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C47 || CT.C47,
-        [_Location_name]: null,
-        [_Location_column]: 19,
-        [_Location_line]: 60,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C50() {
-      return C50 = dart.const({
-        __proto__: icon_data.IconData.prototype,
-        [IconData_matchTextDirection]: false,
-        [IconData_fontPackage]: null,
-        [IconData_fontFamily]: "MaterialIcons",
-        [IconData_codePoint]: 59700
-      });
-    },
-    get C45() {
-      return C45 = dart.const({
-        __proto__: icon.Icon.prototype,
-        [Widget__location]: C46 || CT.C46,
-        [Widget_key]: null,
-        [Icon_textDirection]: null,
-        [Icon_semanticLabel]: null,
-        [Icon_color]: null,
-        [Icon_size]: 28,
-        [Icon_icon]: C50 || CT.C50
-      });
-    },
-    get C54() {
-      return C54 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "data",
-        [_Location_column]: 9,
-        [_Location_line]: 66,
-        [_Location_file]: null
-      });
-    },
-    get C55() {
-      return C55 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "style",
-        [_Location_column]: 9,
-        [_Location_line]: 67,
-        [_Location_file]: null
-      });
-    },
-    get C53() {
-      return C53 = dart.constList([C54 || CT.C54, C55 || CT.C55], _LocationL());
-    },
-    get C52() {
-      return C52 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C53 || CT.C53,
-        [_Location_name]: null,
-        [_Location_column]: 20,
-        [_Location_line]: 65,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
-    },
-    get C57() {
-      return C57 = dart.const({
-        __proto__: ui.FontWeight.prototype,
-        [FontWeight_index]: 5
-      });
-    },
-    get C56() {
-      return C56 = dart.const({
-        __proto__: text_style.TextStyle.prototype,
-        [TextStyle_fontFeatures]: null,
-        [TextStyle_shadows]: null,
-        [TextStyle_debugLabel]: null,
-        [TextStyle_decorationThickness]: null,
-        [TextStyle_decorationStyle]: null,
-        [TextStyle_decorationColor]: null,
-        [TextStyle_decoration]: null,
-        [TextStyle_background]: null,
-        [TextStyle_foreground]: null,
-        [TextStyle_locale]: null,
-        [TextStyle_height]: null,
-        [TextStyle_textBaseline]: null,
-        [TextStyle_wordSpacing]: null,
-        [TextStyle_letterSpacing]: null,
-        [TextStyle_fontStyle]: null,
-        [TextStyle_fontWeight]: C57 || CT.C57,
-        [TextStyle_fontSize]: 20,
-        [TextStyle__package]: null,
-        [TextStyle__fontFamilyFallback]: null,
-        [TextStyle_fontFamily]: null,
-        [TextStyle_backgroundColor]: null,
-        [TextStyle_color]: null,
-        [TextStyle_inherit]: true
-      });
-    },
-    get C51() {
-      return C51 = dart.const({
-        __proto__: text.Text.prototype,
-        [Widget__location]: C52 || CT.C52,
-        [Widget_key]: null,
-        [Text_textHeightBehavior]: null,
-        [Text_textWidthBasis]: null,
-        [Text_semanticsLabel]: null,
-        [Text_maxLines]: null,
-        [Text_textScaleFactor]: null,
-        [Text_overflow]: null,
-        [Text_softWrap]: null,
-        [Text_locale]: null,
-        [Text_textDirection]: null,
-        [Text_textAlign]: null,
-        [Text_strutStyle]: null,
-        [Text_style]: C56 || CT.C56,
-        [Text_textSpan]: null,
-        [Text_data]: "Play"
-      });
-    },
-    get C60() {
-      return C60 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "icon",
-        [_Location_column]: 7,
-        [_Location_line]: 60,
-        [_Location_file]: null
-      });
-    },
-    get C61() {
-      return C61 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "color",
-        [_Location_column]: 7,
-        [_Location_line]: 64,
-        [_Location_file]: null
-      });
-    },
-    get C62() {
-      return C62 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "label",
-        [_Location_column]: 7,
-        [_Location_line]: 65,
-        [_Location_file]: null
-      });
-    },
-    get C63() {
-      return C63 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "onPressed",
-        [_Location_column]: 7,
-        [_Location_line]: 69,
-        [_Location_file]: null
-      });
-    },
-    get C59() {
-      return C59 = dart.constList([C60 || CT.C60, C61 || CT.C61, C62 || CT.C62, C63 || CT.C63], _LocationL());
-    },
-    get C58() {
-      return C58 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C59 || CT.C59,
-        [_Location_name]: null,
-        [_Location_column]: 23,
-        [_Location_line]: 59,
-        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/widgets/content_header.dart"
-      });
+    get C2() {
+      return C2 = dart.constList([C0 || CT.C0, C1 || CT.C1], _LicenseEntryWithLineBreaksParserStateL());
     }
   }, false);
-  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
-  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
-  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
-  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
-  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
-  var C2;
-  var C3;
-  var C1;
+  var text$ = dart.privateName(licenses, "LicenseParagraph.text");
+  var indent$ = dart.privateName(licenses, "LicenseParagraph.indent");
+  licenses.LicenseParagraph = class LicenseParagraph extends core.Object {
+    get text() {
+      return this[text$];
+    }
+    set text(value) {
+      super.text = value;
+    }
+    get indent() {
+      return this[indent$];
+    }
+    set indent(value) {
+      super.indent = value;
+    }
+  };
+  (licenses.LicenseParagraph.new = function(text, indent) {
+    if (text == null) dart.nullFailed(L0, 15, 31, "text");
+    if (indent == null) dart.nullFailed(L0, 15, 42, "indent");
+    this[text$] = text;
+    this[indent$] = indent;
+    ;
+  }).prototype = licenses.LicenseParagraph.prototype;
+  dart.addTypeTests(licenses.LicenseParagraph);
+  dart.addTypeCaches(licenses.LicenseParagraph);
+  dart.setLibraryUri(licenses.LicenseParagraph, L1);
+  dart.setFieldSignature(licenses.LicenseParagraph, () => ({
+    __proto__: dart.getFields(licenses.LicenseParagraph.__proto__),
+    text: dart.finalFieldType(core.String),
+    indent: dart.finalFieldType(core.int)
+  }));
+  dart.defineLazy(licenses.LicenseParagraph, {
+    /*licenses.LicenseParagraph.centeredIndent*/get centeredIndent() {
+      return -1;
+    }
+  }, false);
+  licenses.LicenseEntry = class LicenseEntry extends core.Object {};
+  (licenses.LicenseEntry.new = function() {
+    ;
+  }).prototype = licenses.LicenseEntry.prototype;
+  dart.addTypeTests(licenses.LicenseEntry);
+  dart.addTypeCaches(licenses.LicenseEntry);
+  dart.setLibraryUri(licenses.LicenseEntry, L1);
+  var _name$ = dart.privateName(licenses, "_name");
   var C0;
-  var C6;
-  var C7;
-  var C5;
-  var C4;
-  var C10;
-  var C9;
-  var C8;
-  var C13;
-  var C14;
-  var C12;
-  var C11;
-  var C17;
-  var C18;
-  var C16;
-  var C15;
-  var C21;
-  var C22;
-  var C23;
-  var C20;
-  var C19;
-  var C25;
-  var C24;
-  var C28;
-  var C29;
-  var C30;
-  var C27;
-  var C26;
-  var C33;
-  var C34;
-  var C32;
-  var C31;
-  var C37;
-  var C38;
-  var C39;
-  var C40;
-  var C36;
-  var C35;
-  var C43;
-  var C44;
-  var C42;
-  var C41;
-  content_header.ContentHeader = class ContentHeader extends framework.StatelessWidget {
-    build(context) {
-      return new basic.Stack.new({alignment: alignment.Alignment.center, children: JSArrayOfWidgetL().of([new container.Container.new({height: 500.0, decoration: new box_decoration.BoxDecoration.new({image: new decoration_image.DecorationImage.new({image: new image_resolution.AssetImage.new("assets/images/sintel.jpg"), fit: box_fit.BoxFit.cover})}), $creationLocationd_0dea112b090073317d4: C0 || CT.C0}), new container.Container.new({height: 500.0, decoration: new box_decoration.BoxDecoration.new({gradient: new gradient.LinearGradient.new({colors: JSArrayOfColorL().of([colors.Colors.black, colors.Colors.transparent]), begin: alignment.Alignment.bottomCenter, end: alignment.Alignment.topCenter})}), $creationLocationd_0dea112b090073317d4: C4 || CT.C4}), new basic.Positioned.new({bottom: 100.0, child: new basic.SizedBox.new({width: 250.0, child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/images/sintel_title.png"), $creationLocationd_0dea112b090073317d4: C8 || CT.C8}), $creationLocationd_0dea112b090073317d4: C11 || CT.C11}), $creationLocationd_0dea112b090073317d4: C15 || CT.C15}), new basic.Positioned.new({left: 0.0, right: 0.0, bottom: 40.0, child: new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.spaceEvenly, children: JSArrayOfWidgetL().of([new vertical_action_button.VIB.new({icon: icons.Icons.add, title: "List", ontap: dart.fn(() => core.print("clicked List"), VoidTovoid()), $creationLocationd_0dea112b090073317d4: C19 || CT.C19}), new content_header._playbt.new({$creationLocationd_0dea112b090073317d4: C24 || CT.C24}), new vertical_action_button.VIB.new({icon: icons.Icons.info_outline, title: "Info", ontap: dart.fn(() => core.print("clicked Info"), VoidTovoid()), $creationLocationd_0dea112b090073317d4: C26 || CT.C26})]), $creationLocationd_0dea112b090073317d4: C31 || CT.C31}), $creationLocationd_0dea112b090073317d4: C35 || CT.C35})]), $creationLocationd_0dea112b090073317d4: C41 || CT.C41});
+  var C1;
+  var C2;
+  licenses._LicenseEntryWithLineBreaksParserState = class _LicenseEntryWithLineBreaksParserState extends core.Object {
+    toString() {
+      return this[_name$];
     }
   };
-  (content_header.ContentHeader.new = function(opts) {
-    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
-    content_header.ContentHeader.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+  (licenses._LicenseEntryWithLineBreaksParserState.new = function(index, _name) {
+    if (index == null) dart.nullFailed(L0, 56, 6, "index");
+    if (_name == null) dart.nullFailed(L0, 56, 6, "_name");
+    this.index = index;
+    this[_name$] = _name;
     ;
-  }).prototype = content_header.ContentHeader.prototype;
-  dart.addTypeTests(content_header.ContentHeader);
-  dart.addTypeCaches(content_header.ContentHeader);
-  dart.setMethodSignature(content_header.ContentHeader, () => ({
-    __proto__: dart.getMethods(content_header.ContentHeader.__proto__),
-    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }).prototype = licenses._LicenseEntryWithLineBreaksParserState.prototype;
+  dart.addTypeTests(licenses._LicenseEntryWithLineBreaksParserState);
+  dart.addTypeCaches(licenses._LicenseEntryWithLineBreaksParserState);
+  dart.setLibraryUri(licenses._LicenseEntryWithLineBreaksParserState, L1);
+  dart.setFieldSignature(licenses._LicenseEntryWithLineBreaksParserState, () => ({
+    __proto__: dart.getFields(licenses._LicenseEntryWithLineBreaksParserState.__proto__),
+    index: dart.finalFieldType(core.int),
+    [_name$]: dart.finalFieldType(core.String)
   }));
-  dart.setLibraryUri(content_header.ContentHeader, L0);
-  var C48;
-  var C49;
-  var C47;
-  var C46;
-  var Widget__location = dart.privateName(framework, "Widget._location");
-  var Widget_key = dart.privateName(framework, "Widget.key");
-  var Icon_textDirection = dart.privateName(icon, "Icon.textDirection");
-  var Icon_semanticLabel = dart.privateName(icon, "Icon.semanticLabel");
-  var Icon_color = dart.privateName(icon, "Icon.color");
-  var Icon_size = dart.privateName(icon, "Icon.size");
-  var IconData_matchTextDirection = dart.privateName(icon_data, "IconData.matchTextDirection");
-  var IconData_fontPackage = dart.privateName(icon_data, "IconData.fontPackage");
-  var IconData_fontFamily = dart.privateName(icon_data, "IconData.fontFamily");
-  var IconData_codePoint = dart.privateName(icon_data, "IconData.codePoint");
-  var C50;
-  var Icon_icon = dart.privateName(icon, "Icon.icon");
-  var C45;
-  var C54;
-  var C55;
-  var C53;
-  var C52;
-  var Text_textHeightBehavior = dart.privateName(text, "Text.textHeightBehavior");
-  var Text_textWidthBasis = dart.privateName(text, "Text.textWidthBasis");
-  var Text_semanticsLabel = dart.privateName(text, "Text.semanticsLabel");
-  var Text_maxLines = dart.privateName(text, "Text.maxLines");
-  var Text_textScaleFactor = dart.privateName(text, "Text.textScaleFactor");
-  var Text_overflow = dart.privateName(text, "Text.overflow");
-  var Text_softWrap = dart.privateName(text, "Text.softWrap");
-  var Text_locale = dart.privateName(text, "Text.locale");
-  var Text_textDirection = dart.privateName(text, "Text.textDirection");
-  var Text_textAlign = dart.privateName(text, "Text.textAlign");
-  var Text_strutStyle = dart.privateName(text, "Text.strutStyle");
-  var TextStyle_fontFeatures = dart.privateName(text_style, "TextStyle.fontFeatures");
-  var TextStyle_shadows = dart.privateName(text_style, "TextStyle.shadows");
-  var TextStyle_debugLabel = dart.privateName(text_style, "TextStyle.debugLabel");
-  var TextStyle_decorationThickness = dart.privateName(text_style, "TextStyle.decorationThickness");
-  var TextStyle_decorationStyle = dart.privateName(text_style, "TextStyle.decorationStyle");
-  var TextStyle_decorationColor = dart.privateName(text_style, "TextStyle.decorationColor");
-  var TextStyle_decoration = dart.privateName(text_style, "TextStyle.decoration");
-  var TextStyle_background = dart.privateName(text_style, "TextStyle.background");
-  var TextStyle_foreground = dart.privateName(text_style, "TextStyle.foreground");
-  var TextStyle_locale = dart.privateName(text_style, "TextStyle.locale");
-  var TextStyle_height = dart.privateName(text_style, "TextStyle.height");
-  var TextStyle_textBaseline = dart.privateName(text_style, "TextStyle.textBaseline");
-  var TextStyle_wordSpacing = dart.privateName(text_style, "TextStyle.wordSpacing");
-  var TextStyle_letterSpacing = dart.privateName(text_style, "TextStyle.letterSpacing");
-  var TextStyle_fontStyle = dart.privateName(text_style, "TextStyle.fontStyle");
-  var FontWeight_index = dart.privateName(ui, "FontWeight.index");
-  var C57;
-  var TextStyle_fontWeight = dart.privateName(text_style, "TextStyle.fontWeight");
-  var TextStyle_fontSize = dart.privateName(text_style, "TextStyle.fontSize");
-  var TextStyle__package = dart.privateName(text_style, "TextStyle._package");
-  var TextStyle__fontFamilyFallback = dart.privateName(text_style, "TextStyle._fontFamilyFallback");
-  var TextStyle_fontFamily = dart.privateName(text_style, "TextStyle.fontFamily");
-  var TextStyle_backgroundColor = dart.privateName(text_style, "TextStyle.backgroundColor");
-  var TextStyle_color = dart.privateName(text_style, "TextStyle.color");
-  var TextStyle_inherit = dart.privateName(text_style, "TextStyle.inherit");
-  var C56;
-  var Text_style = dart.privateName(text, "Text.style");
-  var Text_textSpan = dart.privateName(text, "Text.textSpan");
-  var Text_data = dart.privateName(text, "Text.data");
-  var C51;
-  var C60;
-  var C61;
-  var C62;
-  var C63;
-  var C59;
-  var C58;
-  content_header._playbt = class _playbt extends framework.StatelessWidget {
-    build(context) {
-      return new flat_button._FlatButtonWithIcon.new({icon: C45 || CT.C45, color: colors.Colors.white, label: C51 || CT.C51, onPressed: dart.fn(() => {
-          core.print("click play!");
-        }, VoidToNull()), $creationLocationd_0dea112b090073317d4: C58 || CT.C58});
+  dart.defineExtensionMethods(licenses._LicenseEntryWithLineBreaksParserState, ['toString']);
+  licenses._LicenseEntryWithLineBreaksParserState.beforeParagraph = C0 || CT.C0;
+  licenses._LicenseEntryWithLineBreaksParserState.inParagraph = C1 || CT.C1;
+  licenses._LicenseEntryWithLineBreaksParserState.values = C2 || CT.C2;
+  var packages$ = dart.privateName(licenses, "LicenseEntryWithLineBreaks.packages");
+  var text$0 = dart.privateName(licenses, "LicenseEntryWithLineBreaks.text");
+  licenses.LicenseEntryWithLineBreaks = class LicenseEntryWithLineBreaks extends licenses.LicenseEntry {
+    get packages() {
+      return this[packages$];
+    }
+    set packages(value) {
+      super.packages = value;
+    }
+    get text() {
+      return this[text$0];
+    }
+    set text(value) {
+      super.text = value;
+    }
+    get paragraphs() {
+      return new (SyncIterableOfLicenseParagraph()).new((function* paragraphs() {
+        let lineStart = 0;
+        let currentPosition = 0;
+        let lastLineIndent = 0;
+        let currentLineIndent = 0;
+        let currentParagraphIndentation = null;
+        let state = licenses._LicenseEntryWithLineBreaksParserState.beforeParagraph;
+        let lines = JSArrayOfString().of([]);
+        const addLine = () => {
+          if (!(lineStart < currentPosition)) dart.assertFailed(null, L0, 152, 14, "lineStart < currentPosition");
+          lines[$add](this.text[$substring](lineStart, currentPosition));
+        };
+        dart.fn(addLine, VoidTovoid());
+        function getParagraph() {
+          if (!dart.test(lines[$isNotEmpty])) dart.assertFailed(null, L0, 157, 14, "lines.isNotEmpty");
+          if (!(currentParagraphIndentation != null)) dart.assertFailed(null, L0, 158, 14, "currentParagraphIndentation != null");
+          let result = new licenses.LicenseParagraph.new(lines[$join](" "), dart.nullCheck(currentParagraphIndentation));
+          if (!(result.text[$trimLeft]() === result.text)) dart.assertFailed(null, L0, 160, 14, "result.text.trimLeft() == result.text");
+          if (!result.text[$isNotEmpty]) dart.assertFailed(null, L0, 161, 14, "result.text.isNotEmpty");
+          lines[$clear]();
+          return result;
+        }
+        dart.fn(getParagraph, VoidToLicenseParagraph());
+        while (currentPosition < this.text.length) {
+          switch (state) {
+            case C0 || CT.C0:
+            {
+              if (!(lineStart === currentPosition)) dart.assertFailed(null, L0, 169, 18, "lineStart == currentPosition");
+              let labelState = this.text[$_get](currentPosition);
+              SL0:
+                while (true) {
+                  switch (labelState) {
+                    case " ":
+                    {
+                      lineStart = currentPosition + 1;
+                      currentLineIndent = currentLineIndent + 1;
+                      state = licenses._LicenseEntryWithLineBreaksParserState.beforeParagraph;
+                      break SL0;
+                    }
+                    case "\t":
+                    {
+                      lineStart = currentPosition + 1;
+                      currentLineIndent = currentLineIndent + 8;
+                      state = licenses._LicenseEntryWithLineBreaksParserState.beforeParagraph;
+                      break SL0;
+                    }
+                    case "\r":
+                    case "\n":
+                    case "\f":
+                    {
+                      if (dart.test(lines[$isNotEmpty])) {
+                        yield getParagraph();
+                      }
+                      if (this.text[$_get](currentPosition) === "\r" && currentPosition < this.text.length - 1 && this.text[$_get](currentPosition + 1) === "\n") {
+                        currentPosition = currentPosition + 1;
+                      }
+                      lastLineIndent = 0;
+                      currentLineIndent = 0;
+                      currentParagraphIndentation = null;
+                      lineStart = currentPosition + 1;
+                      state = licenses._LicenseEntryWithLineBreaksParserState.beforeParagraph;
+                      break SL0;
+                    }
+                    case "[":
+                    {
+                      currentLineIndent = currentLineIndent + 1;
+                      labelState = Symbol('_default');
+                      continue SL0;
+                    }
+                    default:
+                    {
+                      if (dart.test(lines[$isNotEmpty]) && currentLineIndent > lastLineIndent) {
+                        yield getParagraph();
+                        currentParagraphIndentation = null;
+                      }
+                      if (currentParagraphIndentation == null) {
+                        if (currentLineIndent > 10)
+                          currentParagraphIndentation = -1;
+                        else
+                          currentParagraphIndentation = (currentLineIndent / 3)[$truncate]();
+                      }
+                      state = licenses._LicenseEntryWithLineBreaksParserState.inParagraph;
+                      break SL0;
+                    }
+                  }
+                  break;
+                }
+              break;
+            }
+            case C1 || CT.C1:
+            {
+              switch (this.text[$_get](currentPosition)) {
+                case "\n":
+                {
+                  addLine();
+                  lastLineIndent = currentLineIndent;
+                  currentLineIndent = 0;
+                  lineStart = currentPosition + 1;
+                  state = licenses._LicenseEntryWithLineBreaksParserState.beforeParagraph;
+                  break;
+                }
+                case "\f":
+                {
+                  addLine();
+                  yield getParagraph();
+                  lastLineIndent = 0;
+                  currentLineIndent = 0;
+                  currentParagraphIndentation = null;
+                  lineStart = currentPosition + 1;
+                  state = licenses._LicenseEntryWithLineBreaksParserState.beforeParagraph;
+                  break;
+                }
+                default:
+                {
+                  state = licenses._LicenseEntryWithLineBreaksParserState.inParagraph;
+                }
+              }
+              break;
+            }
+            default:
+            {
+              dart.throw(new _internal.ReachabilityError.new("`null` encountered as case in a switch expression with a non-nullable enum type."));
+            }
+          }
+          currentPosition = currentPosition + 1;
+        }
+        switch (state) {
+          case C0 || CT.C0:
+          {
+            if (dart.test(lines[$isNotEmpty])) {
+              yield getParagraph();
+            }
+            break;
+          }
+          case C1 || CT.C1:
+          {
+            addLine();
+            yield getParagraph();
+            break;
+          }
+          default:
+          {
+            dart.throw(new _internal.ReachabilityError.new("`null` encountered as case in a switch expression with a non-nullable enum type."));
+          }
+        }
+      }).bind(this));
     }
   };
-  (content_header._playbt.new = function(opts) {
-    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
-    content_header._playbt.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+  (licenses.LicenseEntryWithLineBreaks.new = function(packages, text) {
+    if (packages == null) dart.nullFailed(L0, 121, 41, "packages");
+    if (text == null) dart.nullFailed(L0, 121, 56, "text");
+    this[packages$] = packages;
+    this[text$0] = text;
+    licenses.LicenseEntryWithLineBreaks.__proto__.new.call(this);
     ;
-  }).prototype = content_header._playbt.prototype;
-  dart.addTypeTests(content_header._playbt);
-  dart.addTypeCaches(content_header._playbt);
-  dart.setMethodSignature(content_header._playbt, () => ({
-    __proto__: dart.getMethods(content_header._playbt.__proto__),
-    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }).prototype = licenses.LicenseEntryWithLineBreaks.prototype;
+  dart.addTypeTests(licenses.LicenseEntryWithLineBreaks);
+  dart.addTypeCaches(licenses.LicenseEntryWithLineBreaks);
+  dart.setGetterSignature(licenses.LicenseEntryWithLineBreaks, () => ({
+    __proto__: dart.getGetters(licenses.LicenseEntryWithLineBreaks.__proto__),
+    paragraphs: core.Iterable$(licenses.LicenseParagraph)
   }));
-  dart.setLibraryUri(content_header._playbt, L0);
-  dart.trackLibraries("packages/netflix_flutter/widgets/content_header.dart", {
-    "package:netflix_flutter/widgets/content_header.dart": content_header
+  dart.setLibraryUri(licenses.LicenseEntryWithLineBreaks, L1);
+  dart.setFieldSignature(licenses.LicenseEntryWithLineBreaks, () => ({
+    __proto__: dart.getFields(licenses.LicenseEntryWithLineBreaks.__proto__),
+    packages: dart.finalFieldType(core.List$(core.String)),
+    text: dart.finalFieldType(core.String)
+  }));
+  licenses.LicenseRegistry = class LicenseRegistry extends core.Object {
+    static addLicense(collector) {
+      if (collector == null) dart.nullFailed(L0, 303, 48, "collector");
+      licenses.LicenseRegistry._collectors == null ? licenses.LicenseRegistry._collectors = JSArrayOfVoidToStreamOfLicenseEntry().of([]) : null;
+      dart.nullCheck(licenses.LicenseRegistry._collectors)[$add](collector);
+    }
+    static get licenses() {
+      return new (_AsyncStarImplOfLicenseEntry()).new(function* licenses$(stream) {
+        if (licenses.LicenseRegistry._collectors == null) return;
+        for (let collector of dart.nullCheck(licenses.LicenseRegistry._collectors)) {
+          if (stream.addStream(collector())) return;
+          yield;
+        }
+      }).stream;
+    }
+    static reset() {
+      licenses.LicenseRegistry._collectors = null;
+    }
+  };
+  (licenses.LicenseRegistry.__ = function() {
+    ;
+  }).prototype = licenses.LicenseRegistry.prototype;
+  dart.addTypeTests(licenses.LicenseRegistry);
+  dart.addTypeCaches(licenses.LicenseRegistry);
+  dart.setLibraryUri(licenses.LicenseRegistry, L1);
+  dart.defineLazy(licenses.LicenseRegistry, {
+    /*licenses.LicenseRegistry._collectors*/get _collectors() {
+      return null;
+    },
+    set _collectors(_) {}
+  }, false);
+  dart.trackLibraries("packages/flutter/src/foundation/licenses.dart", {
+    "package:flutter/src/foundation/licenses.dart": licenses
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["content_header.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAM4B;AACxB,YAAO,iCACgB,sCACX,uBACR,qCACU,mBACI,6CACD,iDACI,sEAAuC,iFAExD,qCACY,mBACI,gDACE,yCACE,sBAAQ,qBAAc,oCACb,uCACF,0FAC3B,kCACY,cACD,+BACE,cACA,4BACE,gPAGf,gCACU,YACC,aACC,aACD,sCACgC,8CAC3B,uBACR,0CACc,wBACL,eACA,cAAM,WAAM,yFAErB,yFACA,0CACgB,iCACL,eACA,cAAM,WAAM;IAKrC;;;;;;EACF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAkB,sEAKF,sDAKH;AACW,UAApB,WAAM;;IAGZ;;;;;;EACF","file":"../../../../../../packages/netflix_flutter/widgets/content_header.dart.lib.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["licenses.dart"],"names":[],"mappings":"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","file":"../../../../../../packages/flutter/src/foundation/licenses.dart.lib.js"}');
   // Exports:
   return {
-    widgets__content_header: content_header
+    src__foundation__licenses: licenses
   };
 }));
 
-//# sourceMappingURL=content_header.dart.lib.js.map
+//# sourceMappingURL=licenses.dart.lib.js.map

@@ -20,15 +20,15 @@ define("main_module.bootstrap", ["web_entrypoint.dart", "dart_sdk"], function(ap
          main();
       });
     }
-    window.$dartAppId = "J2kIt+vuaj2foCLlwV3mmg==";
+    window.$dartAppId = "vzjQ0uewYGkjtQbtqiIxAg==";
 window.$dartReloadConfiguration = "ReloadConfiguration.none";
 window.$dartModuleStrategy = "require-js";
 window.$loadModuleConfig = require;
 window.$dwdsVersion = "7.0.2";
-window.$dwdsDevHandlerPath = "http://localhost:52177/$dwdsSseHandler";
+window.$dwdsDevHandlerPath = "http://localhost:50598/$dwdsSseHandler";
 window.$dartEntrypointPath = "main_module.bootstrap.js";
 window.$requireLoader.forceLoadModule("dwds/src/injected/client");
-window.$dartExtensionUri = "ws://127.0.0.1:52179/$debug";
+window.$dartExtensionUri = "ws://127.0.0.1:50600/$debug";
 
   } else {
     if(window.$dartMainExecuted){
@@ -441,7 +441,7 @@ let modulePaths = {
  "packages/flutter/src/material/animated_icons.dart": "packages/flutter/src/material/animated_icons.dart.lib",
  "packages/flutter/src/material/about.dart": "packages/flutter/src/material/about.dart.lib",
  "packages/netflix_flutter/main.dart": "packages/netflix_flutter/main.dart.lib",
- "packages/netflix_flutter/screens/screens.dart": "packages/netflix_flutter/screens/screens.dart.lib",
+ "packages/netflix_flutter/screens/nav_bar.dart": "packages/netflix_flutter/screens/nav_bar.dart.lib",
  "packages/netflix_flutter/screens/home_screen.dart": "packages/netflix_flutter/screens/home_screen.dart.lib",
  "packages/netflix_flutter/widgets/widgets.dart": "packages/netflix_flutter/widgets/widgets.dart.lib",
  "packages/netflix_flutter/widgets/content_list.dart": "packages/netflix_flutter/widgets/content_list.dart.lib",
@@ -815,7 +815,7 @@ let moduleNames = {
  "packages/flutter/src/material/animated_icons.dart.lib": "packages/flutter/src/material/animated_icons.dart",
  "packages/flutter/src/material/about.dart.lib": "packages/flutter/src/material/about.dart",
  "packages/netflix_flutter/main.dart.lib": "packages/netflix_flutter/main.dart",
- "packages/netflix_flutter/screens/screens.dart.lib": "packages/netflix_flutter/screens/screens.dart",
+ "packages/netflix_flutter/screens/nav_bar.dart.lib": "packages/netflix_flutter/screens/nav_bar.dart",
  "packages/netflix_flutter/screens/home_screen.dart.lib": "packages/netflix_flutter/screens/home_screen.dart",
  "packages/netflix_flutter/widgets/widgets.dart.lib": "packages/netflix_flutter/widgets/widgets.dart",
  "packages/netflix_flutter/widgets/content_list.dart.lib": "packages/netflix_flutter/widgets/content_list.dart",
