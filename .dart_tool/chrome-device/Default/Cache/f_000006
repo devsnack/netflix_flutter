@@ -1,0 +1,801 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/preferred_size.dart', 'packages/netflix_flutter/widgets/app_bar.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/netflix_flutter/widgets/content_header.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/netflix_flutter/widgets/previews.dart', 'packages/netflix_flutter/data/data.dart', 'packages/netflix_flutter/widgets/content_list.dart'], (function load__packages__netflix_flutter__screens__home_screen_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__preferred_size$46dart, packages__netflix_flutter__widgets__app_bar$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__netflix_flutter__widgets__content_header$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__netflix_flutter__widgets__previews$46dart, packages__netflix_flutter__data__data$46dart, packages__netflix_flutter__widgets__content_list$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const scroll_controller = packages__flutter__src__widgets__widget_span$46dart.src__widgets__scroll_controller;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const media_query = packages__flutter__src__widgets__widget_span$46dart.src__widgets__media_query;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const floating_action_button = packages__flutter__src__material__icon_button$46dart.src__material__floating_action_button;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const preferred_size = packages__flutter__src__widgets__preferred_size$46dart.src__widgets__preferred_size;
+  const app_bar = packages__netflix_flutter__widgets__app_bar$46dart.widgets__app_bar;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const content_header = packages__netflix_flutter__widgets__content_header$46dart.widgets__content_header;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const previews = packages__netflix_flutter__widgets__previews$46dart.widgets__previews;
+  const data = packages__netflix_flutter__data__data$46dart.data__data;
+  const content_list = packages__netflix_flutter__widgets__content_list$46dart.widgets__content_list;
+  var home_screen = Object.create(dart.library);
+  var VoidToNull = () => (VoidToNull = dart.constFn(dart.fnType(core.Null, [])))();
+  var _LocationL = () => (_LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))();
+  var WidgetL = () => (WidgetL = dart.constFn(dart.legacy(framework.Widget)))();
+  var JSArrayOfWidgetL = () => (JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(WidgetL())))();
+  const CT = Object.create(null);
+  var L0 = "package:netflix_flutter/screens/home_screen.dart";
+  dart.defineLazy(CT, {
+    get C2() {
+      return C2 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 17,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 11,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C1 = dart.constList([C2 || CT.C2, C3 || CT.C3], _LocationL());
+    },
+    get C0() {
+      return C0 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C1 || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C6() {
+      return C6 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C7 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 9,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C8 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 9,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C5 = dart.constList([C6 || CT.C6, C7 || CT.C7, C8 || CT.C8], _LocationL());
+    },
+    get C4() {
+      return C4 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C5 || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C11() {
+      return C11 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "scrolloffset",
+        [_Location_column]: 13,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C10 = dart.constList([C11 || CT.C11], _LocationL());
+    },
+    get C9() {
+      return C9 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C10 || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 42,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C14() {
+      return C14 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "preferredSize",
+        [_Location_column]: 11,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C15 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C13 = dart.constList([C14 || CT.C14, C15 || CT.C15], _LocationL());
+    },
+    get C12() {
+      return C12 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C13 || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 40,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C17() {
+      return C17 = dart.constList([], _LocationL());
+    },
+    get C16() {
+      return C16 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C17 || CT.C17,
+        [_Location_name]: null,
+        [_Location_column]: 37,
+        [_Location_line]: 48,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C20() {
+      return C20 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 30,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C19 = dart.constList([C20 || CT.C20], _LocationL());
+    },
+    get C18() {
+      return C18 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C19 || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 48,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C23() {
+      return C23 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 33,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C24 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "contentlist",
+        [_Location_column]: 52,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C22 = dart.constList([C23 || CT.C23, C24 || CT.C24], _LocationL());
+    },
+    get C21() {
+      return C21 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C22 || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 52,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C27() {
+      return C27 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C26 = dart.constList([C27 || CT.C27], _LocationL());
+    },
+    get C25() {
+      return C25 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C26 || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C30() {
+      return C30 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 15,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C31 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "sliver",
+        [_Location_column]: 15,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C29 = dart.constList([C30 || CT.C30, C31 || CT.C31], _LocationL());
+    },
+    get C28() {
+      return C28 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C29 || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 49,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C34() {
+      return C34 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 36,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C35 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "contentlist",
+        [_Location_column]: 53,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C33 = dart.constList([C34 || CT.C34, C35 || CT.C35], _LocationL());
+    },
+    get C32() {
+      return C32 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C33 || CT.C33,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 57,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C38() {
+      return C38 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C37 = dart.constList([C38 || CT.C38], _LocationL());
+    },
+    get C36() {
+      return C36 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C37 || CT.C37,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 56,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C41() {
+      return C41 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 15,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C42 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "sliver",
+        [_Location_column]: 15,
+        [_Location_line]: 56,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C40 = dart.constList([C41 || CT.C41, C42 || CT.C42], _LocationL());
+    },
+    get C39() {
+      return C39 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C40 || CT.C40,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 54,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C45() {
+      return C45 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 19,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C46 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "contentlist",
+        [_Location_column]: 19,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C47() {
+      return C47 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "isoriginals",
+        [_Location_column]: 19,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C44 = dart.constList([C45 || CT.C45, C46 || CT.C46, C47 || CT.C47], _LocationL());
+    },
+    get C43() {
+      return C43 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C44 || CT.C44,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 62,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C50() {
+      return C50 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 62,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C49 = dart.constList([C50 || CT.C50], _LocationL());
+    },
+    get C48() {
+      return C48 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C49 || CT.C49,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 61,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C53() {
+      return C53 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 15,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C54 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "sliver",
+        [_Location_column]: 15,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C52 = dart.constList([C53 || CT.C53, C54 || CT.C54], _LocationL());
+    },
+    get C51() {
+      return C51 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C52 || CT.C52,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 59,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C57() {
+      return C57 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 36,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C58 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "contentlist",
+        [_Location_column]: 55,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C56() {
+      return C56 = dart.constList([C57 || CT.C57, C58 || CT.C58], _LocationL());
+    },
+    get C55() {
+      return C55 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C56 || CT.C56,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 71,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C61() {
+      return C61 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C60 = dart.constList([C61 || CT.C61], _LocationL());
+    },
+    get C59() {
+      return C59 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C60 || CT.C60,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 70,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C64() {
+      return C64 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 15,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C65() {
+      return C65 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "sliver",
+        [_Location_column]: 15,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C63 = dart.constList([C64 || CT.C64, C65 || CT.C65], _LocationL());
+    },
+    get C62() {
+      return C62 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C63 || CT.C63,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 68,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C68() {
+      return C68 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "controller",
+        [_Location_column]: 9,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C69 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "slivers",
+        [_Location_column]: 9,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C67() {
+      return C67 = dart.constList([C68 || CT.C68, C69 || CT.C69], _LocationL());
+    },
+    get C66() {
+      return C66 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C67 || CT.C67,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 45,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    },
+    get C72() {
+      return C72 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "extendBodyBehindAppBar",
+        [_Location_column]: 7,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C73() {
+      return C73 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "floatingActionButton",
+        [_Location_column]: 7,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C74() {
+      return C74 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 7,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C75 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C71() {
+      return C71 = dart.constList([C72 || CT.C72, C73 || CT.C73, C74 || CT.C74, C75 || CT.C75], _LocationL());
+    },
+    get C70() {
+      return C70 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C71 || CT.C71,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///C:/Users/babib/Desktop/netflix-flutter/lib/screens/home_screen.dart"
+      });
+    }
+  }, false);
+  home_screen.home_screen = class home_screen$ extends framework.StatefulWidget {
+    createState() {
+      return new home_screen._home_screenState.new();
+    }
+  };
+  (home_screen.home_screen.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    home_screen.home_screen.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = home_screen.home_screen.prototype;
+  dart.addTypeTests(home_screen.home_screen);
+  dart.addTypeCaches(home_screen.home_screen);
+  dart.setMethodSignature(home_screen.home_screen, () => ({
+    __proto__: dart.getMethods(home_screen.home_screen.__proto__),
+    createState: dart.fnType(dart.legacy(home_screen._home_screenState), [])
+  }));
+  dart.setLibraryUri(home_screen.home_screen, L0);
+  var _scrollController = dart.privateName(home_screen, "_scrollController");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var C2;
+  var C3;
+  var C1;
+  var C0;
+  var C6;
+  var C7;
+  var C8;
+  var C5;
+  var C4;
+  var C11;
+  var C10;
+  var C9;
+  var C14;
+  var C15;
+  var C13;
+  var C12;
+  var C17;
+  var C16;
+  var C20;
+  var C19;
+  var C18;
+  var C23;
+  var C24;
+  var C22;
+  var C21;
+  var C27;
+  var C26;
+  var C25;
+  var C30;
+  var C31;
+  var C29;
+  var C28;
+  var C34;
+  var C35;
+  var C33;
+  var C32;
+  var C38;
+  var C37;
+  var C36;
+  var C41;
+  var C42;
+  var C40;
+  var C39;
+  var C45;
+  var C46;
+  var C47;
+  var C44;
+  var C43;
+  var C50;
+  var C49;
+  var C48;
+  var C53;
+  var C54;
+  var C52;
+  var C51;
+  var C57;
+  var C58;
+  var C56;
+  var C55;
+  var C61;
+  var C60;
+  var C59;
+  var C64;
+  var C65;
+  var C63;
+  var C62;
+  var C68;
+  var C69;
+  var C67;
+  var C66;
+  var C72;
+  var C73;
+  var C74;
+  var C75;
+  var C71;
+  var C70;
+  home_screen._home_screenState = class _home_screenState extends framework.State$(dart.legacy(home_screen.home_screen)) {
+    initState() {
+      let t0;
+      this[_scrollController] = (t0 = new scroll_controller.ScrollController.new(), (() => {
+        t0.addListener(dart.fn(() => {
+          this.setState(dart.fn(() => {
+            this.scrolloffset = this[_scrollController].offset;
+          }, VoidToNull()));
+        }, VoidToNull()));
+        return t0;
+      })());
+      super.initState();
+    }
+    build(context) {
+      return new scaffold.Scaffold.new({extendBodyBehindAppBar: true, floatingActionButton: new floating_action_button.FloatingActionButton.new({child: new icon.Icon.new(icons.Icons.cast, {color: colors.Colors.grey._get(850), $creationLocationd_0dea112b090073317d4: C0 || CT.C0}), onPressed: dart.fn(() => {
+            core.print("clicked");
+          }, VoidToNull()), backgroundColor: colors.Colors.white, $creationLocationd_0dea112b090073317d4: C4 || CT.C4}), appBar: new preferred_size.PreferredSize.new({preferredSize: new ui.Size.new(media_query.MediaQuery.of(context).size.width, 50.0), child: new app_bar.appBar.new({scrolloffset: this.scrolloffset, $creationLocationd_0dea112b090073317d4: C9 || CT.C9}), $creationLocationd_0dea112b090073317d4: C12 || CT.C12}), body: new scroll_view.CustomScrollView.new({controller: this[_scrollController], slivers: JSArrayOfWidgetL().of([new basic.SliverToBoxAdapter.new({child: new content_header.ContentHeader.new({$creationLocationd_0dea112b090073317d4: C16 || CT.C16}), $creationLocationd_0dea112b090073317d4: C18 || CT.C18}), new basic.SliverPadding.new({padding: new edge_insets.EdgeInsets.only({top: 15.0, bottom: 10.0}), sliver: new basic.SliverToBoxAdapter.new({child: new previews.Previews.new({title: "Previews", contentlist: data.previews, $creationLocationd_0dea112b090073317d4: C21 || CT.C21}), $creationLocationd_0dea112b090073317d4: C25 || CT.C25}), $creationLocationd_0dea112b090073317d4: C28 || CT.C28}), new basic.SliverPadding.new({padding: new edge_insets.EdgeInsets.only({top: 15.0, bottom: 0.0}), sliver: new basic.SliverToBoxAdapter.new({child: new content_list.ContentList.new({title: "Mylist", contentlist: data.myList, $creationLocationd_0dea112b090073317d4: C32 || CT.C32}), $creationLocationd_0dea112b090073317d4: C36 || CT.C36}), $creationLocationd_0dea112b090073317d4: C39 || CT.C39}), new basic.SliverPadding.new({padding: new edge_insets.EdgeInsets.only({top: 15.0, bottom: 0.0}), sliver: new basic.SliverToBoxAdapter.new({child: new content_list.ContentList.new({title: "Originals", contentlist: data.originals, isoriginals: true, $creationLocationd_0dea112b090073317d4: C43 || CT.C43}), $creationLocationd_0dea112b090073317d4: C48 || CT.C48}), $creationLocationd_0dea112b090073317d4: C51 || CT.C51}), new basic.SliverPadding.new({padding: new edge_insets.EdgeInsets.only({top: 15.0, bottom: 10.0}), sliver: new basic.SliverToBoxAdapter.new({child: new content_list.ContentList.new({title: "Trending", contentlist: data.trending, $creationLocationd_0dea112b090073317d4: C55 || CT.C55}), $creationLocationd_0dea112b090073317d4: C59 || CT.C59}), $creationLocationd_0dea112b090073317d4: C62 || CT.C62})]), $creationLocationd_0dea112b090073317d4: C66 || CT.C66}), $creationLocationd_0dea112b090073317d4: C70 || CT.C70});
+    }
+  };
+  (home_screen._home_screenState.new = function() {
+    this[_scrollController] = null;
+    this.scrolloffset = 0.0;
+    home_screen._home_screenState.__proto__.new.call(this);
+    ;
+  }).prototype = home_screen._home_screenState.prototype;
+  dart.addTypeTests(home_screen._home_screenState);
+  dart.addTypeCaches(home_screen._home_screenState);
+  dart.setMethodSignature(home_screen._home_screenState, () => ({
+    __proto__: dart.getMethods(home_screen._home_screenState.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(home_screen._home_screenState, L0);
+  dart.setFieldSignature(home_screen._home_screenState, () => ({
+    __proto__: dart.getFields(home_screen._home_screenState.__proto__),
+    [_scrollController]: dart.fieldType(dart.legacy(scroll_controller.ScrollController)),
+    scrolloffset: dart.fieldType(dart.legacy(core.double))
+  }));
+  dart.trackLibraries("packages/netflix_flutter/screens/home_screen.dart", {
+    "package:netflix_flutter/screens/home_screen.dart": home_screen
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["home_screen.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAMqC;IAAmB;;;;;;EACxD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAcQ,MALJ,8EAAoB;AAChB,uBAAY;AAGV,UAFF,cAAS;AACgC,YAAvC,oBAAe,AAAkB;;;;;AAGtB,MAAX;IACR;UAG0B;AACxB,YAAO,oDACmB,4BACF,4DACb,kBACC,0BACQ,AAAI,wBAAC,wEAEV;AACO,YAAhB,WAAM;6CAEgB,oFAElB,qDACW,gBAAgB,AAAY,AAAK,0BAAd,OAAO,cAAc,cAChD,sCACS,yIAEd,kDACQ,kCACH,uBACP,yCAA0B,wJAC1B,sCACwB,sCAAU,cAAY,gBAClC,yCACC,kCAAgB,yBAAyB,0LAEtD,sCACwB,sCAAU,cAAY,eAClC,yCACC,yCAAmB,uBAAuB,wLAEvD,sCACwB,sCAAU,cAAY,eAClC,yCACC,yCACE,0BACM,6BACA,iLAGrB,sCACwB,sCAAU,cAAY,gBAClC,yCACC,yCAAmB,yBAAyB;IAKjE;;;IAjEiB;IACV,oBAAe;;;EAiExB","file":"../../../../../../packages/netflix_flutter/screens/home_screen.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__home_screen: home_screen
+  };
+}));
+
+//# sourceMappingURL=home_screen.dart.lib.js.map
